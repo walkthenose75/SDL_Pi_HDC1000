@@ -1,0 +1,34 @@
+{
+  "name": "SDL_Pi_HDC1000",
+  "scripts": {
+  },
+  "env": {
+    "KAFKA_CLIENT_CERT": {
+      "required": true
+    },
+    "KAFKA_CLIENT_CERT_KEY": {
+      "required": true
+    },
+    "KAFKA_PREFIX": {
+      "required": true
+    },
+    "KAFKA_TRUSTED_CERT": {
+      "required": true
+    },
+    "KAFKA_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "herokuconnect",
+    "heroku-kafka",
+    "mcconnect",
+    "heroku-postgresql"
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+
+  ]
+}
